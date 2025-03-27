@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#bulb{
+    height: 15vw;
+    width: 15vw;
+    /* background-color: rgb(206, 136, 136); */
+    border: solid 1px #fff;
+    border-radius: 50%;
+    margin-bottom: 100px;
+    position: relative;
+   
+}
+
+#bulb::after{
+ content: "";
+ height: 4vw;
+ width: 4vw;
+ background-color: rgb(61, 61, 72);
+ position: absolute;
+ bottom: -40%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ border: 2px solid #fff;
+ border-top: none;
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+ /* box-shadow: 0px 10px 5px 2px rgb(58, 57, 53); */
+}
+
+#buttons{
+    /* background-color: aqua; */
+    padding: 1vw 3vw;
+    display: flex;
+    gap: 1vw;
+
+}
+
+
+#buttons button{
+    font-size: 15px;
+    padding: .5vw 2vw;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: rgb(209, 217, 213);
+    /* background: transparent; */
+ 
+}
+
+button:focus{
+    scale: 0.95;
+}
